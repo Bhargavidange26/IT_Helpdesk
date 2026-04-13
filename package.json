@@ -1,0 +1,24 @@
+{
+  "name": "it_helpdesk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bhargavidange26/IT_Helpdesk.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Bhargavidange26/IT_Helpdesk/issues"
+  },
+  "homepage": "https://github.com/Bhargavidange26/IT_Helpdesk#readme",
+  "devDependencies": {
+    "jest": "^30.3.0"
+  }
+}

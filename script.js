@@ -1,4 +1,5 @@
-// USERS + SESSION
+if (typeof window !== "undefined") {
+    // USERS + SESSION
 let users = JSON.parse(localStorage.getItem("users")) || [];
 let tickets = JSON.parse(localStorage.getItem("tickets")) || [];
 let currentUser = JSON.parse(localStorage.getItem("currentUser"));
@@ -102,3 +103,5 @@ function displayTickets() {
 }
 
 displayTickets();
+}
+
