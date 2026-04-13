@@ -1,22 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Client</title>
+    <title>Client Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h1>Client Dashboard</h1>
+<div class="container">
 
-<div class="form">
-    <input type="text" id="title" placeholder="Issue Title">
-    <textarea id="desc" placeholder="Description"></textarea>
+    <div class="top-bar">
+        <a href="index.html" class="btn small">Back</a>
+    </div>
 
-    <button onclick="createTicket()">Submit Ticket</button>
+    <h1>Client Dashboard</h1>
+
+    <div class="card">
+
+        <h2>Create Ticket</h2>
+
+        <div class="form">
+
+            <input type="text" id="title" placeholder="Issue title">
+            <textarea id="desc" placeholder="Describe your issue"></textarea>
+            <label>Priority</label>
+            <select id="priority">
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+            </select>
+            <button class="btn primary full" onclick="createTicket()">
+                Submit Ticket
+            </button>
+
+            <button class="btn primary full" onclick="logout()">Logout</button>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>My Tickets</h2>
+
+        <div id="ticketList"></div>
+
+    </div>
+
 </div>
-
-<h2>My Tickets</h2>
-<div id="ticketList"></div>
 
 <script src="script.js"></script>
 </body>

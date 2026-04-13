@@ -1,49 +1,163 @@
 body {
-    font-family: Arial;
-    background: #0f172a;
-    color: white;
-    padding: 20px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
 }
 
-h1, h2 {
-    text-align: center;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
 }
 
-.form {
-    background: #1e293b;
-    padding: 20px;
-    border-radius: 10px;
-    width: 300px;
-    margin: auto;
-}
-
-input, textarea, select, button {
+/* CARD */
+.card {
+    background: white;
     width: 100%;
+    max-width: 500px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+}
+
+/* HEADINGS */
+h1 {
+    margin-bottom: 10px;
+}
+
+#title {
+    color: #6b7280;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    color: #6b7280;
+    margin-bottom: 20px;
+}
+
+/* FORM */
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
     margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+input, textarea, select {
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+    font-size: 12px;
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+/* BUTTONS */
+.btn {
+    padding: 10px;
     border: none;
-}
-
-button {
-    background: #3b82f6;
-    color: white;
+    border-radius: 6px;
     cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
 
-.ticket {
-    background: #334155;
-    padding: 10px;
-    margin: 10px auto;
-    width: 60%;
-    border-radius: 8px;
+.primary {
+    background: #2563eb;
+    color: white;
 }
+
+.primary:hover {
+    background: #1d4ed8;
+}
+
+.secondary {
+    background: #6b7280;
+    color: white;
+}
+
+.secondary:hover {
+    background: #4b5563;
+}
+
+.full {
+    width: 100%;
+}
+
+.small {
+    padding: 6px 12px;
+    font-size: 12px;
+    background: #e5e7eb;
+    color: #111827;
+}
+
+/* TOP BAR */
+.top-bar {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 15px;
+}
+
+/* TICKETS */
+.ticket {
+    background: #f9fafb;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+    border: 1px solid #e5e7eb;
+}
+
+#ticketList{
+    background: #f9fafb;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    margin-top: 10px;
+    border: 1px solid #e5e7eb;
+}
+
 
 .status {
     padding: 3px 6px;
-    border-radius: 5px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-left: 8px;
 }
 
-.Open { background: orange; }
-.InProgress { background: yellow; color:black; }
-.Resolved { background: green; }
+.Open {
+    background: #fef3c7;
+}
+
+.InProgress {
+    background: #dbeafe;
+}
+
+.Resolved {
+    background: #d1fae5;
+}
+
+#searchBox {
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+#filterStatus {
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-bottom: 3px;
+}

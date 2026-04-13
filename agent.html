@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
     <title>Agent</title>
@@ -10,6 +10,112 @@
 
 <h2>All Tickets</h2>
 <div id="ticketList"></div>
+
+<script src="script.js"></script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Agent Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1 class="page-title">🛠️ Agent Dashboard</h1>
+    <p class="subtitle">Manage and resolve all customer tickets</p>
+
+     STATS CARDS (optional but professional touch) 
+    <div class="stats">
+
+        <div class="stat-card">
+            <h3>Open</h3>
+            <p id="openCount">0</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>In Progress</h3>
+            <p id="progressCount">0</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Resolved</h3>
+            <p id="resolvedCount">0</p>
+        </div>
+
+    </div>
+
+  TICKETS SECTION 
+    <div class="card full-width">
+
+        <h2>📋 All Tickets</h2>
+
+        <div class="filter-bar">
+            <select id="filterStatus">
+                <option value="all">All</option>
+                <option value="Open">Open</option>
+                <option value="InProgress">In Progress</option>
+                <option value="Resolved">Resolved</option>
+            </select>
+
+            <button class="btn secondary" onclick="loadTickets()">
+                Refresh
+            </button>
+        </div>
+
+        <div id="ticketList"></div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agent Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="top-bar">
+        <a href="index.html" class="btn small">Back</a>
+    </div>
+
+    <h1>Agent Dashboard</h1>
+    <input id="searchBox" placeholder="Search tickets...">
+
+        <select id="filterStatus">
+        <option value="all">All</option>
+        <option value="Open">Open</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Resolved">Resolved</option>
+    </select>
+    <div class="card">
+
+        <h2>All Tickets</h2>
+
+        <div id="ticketList"></div>
+
+    </div>
+
+    <div>
+    Open: <span id="openCount">0</span>
+    In Progress: <span id="progressCount">0</span>
+    Resolved: <span id="resolvedCount">0</span>
+    </div>
+
+</div>
 
 <script src="script.js"></script>
 </body>
