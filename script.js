@@ -24,8 +24,8 @@ function generateToken(username) {
    HELPERS (TEST FRIENDLY)
 ========================= */
 
-function findUser(username, password, role) {
-    return users.find(u =>
+function findUser(username, password, role, usersList = users) {
+    return usersList.find(u =>
         u.username === username &&
         u.password === password &&
         u.role === role

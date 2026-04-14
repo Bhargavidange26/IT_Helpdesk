@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/Bhargavidange26/IT_Helpdesk#readme",
   "devDependencies": {
-    "jest": "^30.3.0"
+    "cypress": "^15.13.1",
+    "jest": "^30.3.0",
+    "jest-environment-jsdom": "^30.3.0"
   }
 }
