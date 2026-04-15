@@ -1,0 +1,2 @@
+docker pull maitribihani11/it-helpdesk
+docker run -p 8080:80 maitribihani11/it-helpdesk
